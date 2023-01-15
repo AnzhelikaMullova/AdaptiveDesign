@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            background-color: blanchedalmond;
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-end;
+            min-height: 100vh;
+
+
+        }
+
+        .aside {
+            background-color: aquamarine;
+            width: 40%;
+        }
+
+        .header {
+            background-color: aqua;
+            flex: 0 0 content;
+        }
+
+
+
+        .footer {
+            background-color: blue;
+            flex: 0 0 content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .main1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .first {
+            border: 1px solid red;
+            width: 45%;
+
+        }
+
+
+        .last {
+            border: 1px solid red;
+            width: 45%;
+
+        }
+
+
+        .last1 {
+            border: 1px solid red;
+            margin-bottom: 150px;
+
+        }
+
+        @media screen and (min-width:1024px) {
+            .main {
+                background-color: blanchedalmond;
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-end;
+                min-height: 100vh;
+            }
+
+
+
+            .header {
+                background-color: aqua;
+                flex: 0 0 content;
+            }
+
+
+
+            .footer {
+                background-color: blue;
+                flex: 0 0 content;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .aside {
+                background-color: palevioletred;
+                width: 40%;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .main {
+                background-color: blanchedalmond;
+                display: flex;
+                flex: 0 1 content;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 10px;
+
+            }
+
+            .aside {
+                width: 20vw;
+
+            }
+
+            .header {
+                background-color: rgb(255, 0, 212);
+                width: 100vw;
+
+
+            }
+
+            .footer {
+                background-color: blue;
+                width: 100vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .first {
+                border: 1px solid red;
+                width: 40vw;
+                margin-top: 35px;
+
+
+            }
+
+
+            .last {
+                border: 1px solid red;
+                width: 40vw;
+                margin-top: 35px;
+
+
+            }
+
+
+            .last1 {
+                border: 1px solid red;
+                width: 50vw;
+                =
+            }
+        }
+
+
+        @media screen and (max-width: 767px) {
+            .main {
+                background-color: rgb(243, 191, 113);
+                display: flex;
+                flex: 0 1 content;
+
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .aside {
+                display: none;
+
+            }
+
+            .header {
+                background-color: rgb(255, 0, 212);
+                width: 90vw;
+
+
+            }
+
+            .footer {
+                background-color: blue;
+                width: 90vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .first {
+                border: 1px solid red;
+                width: 90vw;
+
+            }
+
+
+            .last {
+                border: 1px solid red;
+                width: 90vw;
+
+            }
+
+
+            .last1 {
+                border: 1px solid red;
+                width: 90vw;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <p>Шапка страницы</p>
+        </div>
+    </header>
+    <main>
+        <div class="main1">
+            <div class="main">
+                <section class="first">Наиболее общее понятие — страница. Так называются поименованные записи в базе
+                    данных Википедии.
+                    Имена страниц относятся к разным пространствам. Все статьи принадлежат основному пространству имён
+                    (именуемому иногда «пространством статей»), однако обратное неверно. Перенаправления и страницы
+                    значений также встречаются в основном пространстве, однако к статьям обычно не относятся. </section>
+                <section class="last">Наиболее общее понятие — страница. Так называются поименованные записи в базе
+                    данных Википедии.
+                    Имена страниц относятся к разным пространствам. Все статьи принадлежат основному пространству имён
+                    (именуемому иногда «пространством статей»), однако обратное неверно. Перенаправления и страницы
+                    значений также встречаются в основном пространстве, однако к статьям обычно не относятся.</section>
+                <section class="last1"> Наиболее общее понятие — страница. Так называются поименованные записи в базе
+                    данных
+                    Википедии. Имена страниц относятся к разным пространствам. Все статьи принадлежат основному
+                    пространству имён (именуемому иногда «пространством статей»), однако обратное неверно.
+                    Перенаправления и страницы значений также встречаются в основном пространстве, однако к статьям
+                    обычно не относятся.Наиболее общее понятие — страница. Так называются поименованные записи в базе
+                    данных
+                    Википедии. Имена страниц относятся к разным пространствам. Все статьи принадлежат основному
+                    пространству имён (именуемому иногда «пространством статей»), однако обратное неверно.
+                    Перенаправления и страницы значений также встречаются в основном пространстве, однако к статьям
+                    обычно не относятся.</section>
+            </div>
+            <div class="aside">
+                <aside> Боковая область</aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <section>Секция футера 1</section>
+            <section>Секция футера 2</section>
+            <section>Секция футера 3</section>
+            <section>Секция футера 4</section>
+        </div>
+    </footer>
+</body>
+
+</html>
